@@ -12,6 +12,8 @@ const Header = () => {
     [isOpenModal, setIsOpenModal] = useState(false),
     [isCloseModal, setIsCloseModal] = useState(false);
 
+  console.log(dataValue);
+
   useEffect(() => {
     const name = dataValue.map((name) => name.title.toLowerCase());
     const result = name.filter((item) => item.includes(valueInput));
@@ -44,9 +46,10 @@ const Header = () => {
         {isOpenModal && (
           <div className="modal">
             <section>
-              <p> Lista de produtos pesquisados</p>
+              <p> Lista de produtos pesquisados: </p>
               <button onClick={closeModal}>X</button>
             </section>
+
             {searchResult.map((result, i) => (
               <div>
                 <ul>

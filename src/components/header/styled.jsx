@@ -70,9 +70,10 @@ export const ContainerHeader = styled.div`
       min-width: max-content;
       padding: 20px;
       border-radius: 10px;
-      color: red;
+      color: #ee0e7d;
       transition: 0.9s;
-
+      margin-left: 10px;
+      font-size: 12px;
       &:hover {
         border: solid 1px #ee0e7d;
 
@@ -135,7 +136,7 @@ export const ContainerHeader = styled.div`
         flex-direction: column;
         padding-left: 15px;
         font-size: 14px;
-        color: #ee0e7d;
+        color: #000;
         li {
           border-bottom: 1px solid rgba(255, 255, 255, 0.5);
         }
