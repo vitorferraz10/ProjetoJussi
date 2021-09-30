@@ -19,6 +19,13 @@ export const ContainerHeader = styled.div`
 
       font-size: 16px;
       font-weight: 500;
+
+      li {
+        :hover {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
     }
 
     input {
@@ -82,26 +89,63 @@ export const ContainerHeader = styled.div`
       position: absolute;
       top: 20px;
       border-radius: 25px;
-      right: 497px;
+      right: 30%;
       bottom: 40px;
       z-index: 21;
       max-width: 300px;
       width: 100%;
       background-color: #f2f2f2;
 
-      max-height: 500px;
+      max-height: 230px;
       overflow-y: scroll;
       overflow-x: hidden;
 
-      button {
-        font-size: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      section {
         display: flex;
-        justify-content: flex-end;
+        align-items: center;
+        justify-content: space-between;
         width: 100%;
-        position: relative;
-        left: 250px;
-        bottom: 42%;
+
+        p {
+          margin: 10px 0;
+          font-size: 16px;
+          width: max-content;
+          display: flex;
+          flex-wrap: nowrap;
+          margin-left: 15px;
+        }
+      }
+
+      button {
+        font-size: 20px;
+
+        width: 100%;
+
         cursor: pointer;
+      }
+
+      ul {
+        width: 100%;
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        padding-left: 15px;
+        font-size: 14px;
+        color: #ee0e7d;
+        li {
+          border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        }
+      }
+
+      div {
+        margin: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
       }
     }
   }

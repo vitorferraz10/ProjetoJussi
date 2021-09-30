@@ -18,8 +18,6 @@ const Header = () => {
     setSearchResult(result);
   }, [valueInput]);
 
-  console.log(searchResult);
-
   function closeModal() {
     setIsOpenModal(false);
     setIsCloseModal(true);
@@ -35,7 +33,7 @@ const Header = () => {
       </div>
       <div>
         <button className="btnOpenModal" onClick={() => setIsOpenModal(true)}>
-          ({searchResult.length + 1}) <span>ver resultado de busca</span>
+          ({searchResult.length}) <span>ver resultado de busca</span>
         </button>
         <input
           onChange={({ target }) => setValueInput(target.value)}
@@ -45,15 +43,17 @@ const Header = () => {
         />
         {isOpenModal && (
           <div className="modal">
-            <button onClick={closeModal}>X</button>
-
-            <div>
-              {searchResult.map((data, i) => {
-                <ul key={i}>
-                  <li>{data.name}</li>
-                </ul>;
-              })}
-            </div>
+            <section>
+              <p> Lista de produtos pesquisados</p>
+              <button onClick={closeModal}>X</button>
+            </section>
+            {searchResult.map((result, i) => (
+              <div>
+                <ul>
+                  <li key={i}>{result}</li>
+                </ul>
+              </div>
+            ))}
           </div>
         )}
 

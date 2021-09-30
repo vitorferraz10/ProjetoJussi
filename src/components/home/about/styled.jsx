@@ -26,12 +26,12 @@ export const AboutStyled = styled.div`
     p {
       color: #000;
       font-size: 16px;
-      line-height: 24px;
+      line-height: 22px;
       font-weight: 500px;
       font-family: "Barlow";
 
       max-width: 241px;
-
+      min-width: 170px;
       margin: 0;
     }
     button {
@@ -58,6 +58,6 @@ export const AboutStyled = styled.div`
 
   img {
     width: 676px;
-    height: 520px;
+    min-height: 520px;
   }
 `;
