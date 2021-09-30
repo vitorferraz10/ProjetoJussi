@@ -1,4 +1,5 @@
 import React from "react";
+
 import AboutJussi from "./about";
 import AboutVtex from "./AboutVtex";
 import Banner from "./banner/index";

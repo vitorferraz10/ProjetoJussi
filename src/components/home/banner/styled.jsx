@@ -118,7 +118,7 @@ export const Banner = styled.div`
     .zindex {
       position: relative;
       top: -140px;
-      z-index: 20;
+      z-index: 2;
       max-width: 209px;
       width: 100%;
     }

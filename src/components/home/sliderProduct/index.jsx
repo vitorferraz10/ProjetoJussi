@@ -3,7 +3,6 @@ import { SliderContainer } from "./styled";
 import imgGeladeira from "../../../assets/images/Geladeira.jpg";
 import { JSON } from "./products";
 const index = () => {
-  console.log(JSON);
   return (
     <SliderContainer>
       <h1>Nossas soluções</h1>

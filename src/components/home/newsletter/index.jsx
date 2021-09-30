@@ -1,10 +1,11 @@
 import React, { useState } from "react";
+
 import { ContainerNewsletter } from "./styled";
+
 const Newsletter = () => {
   const [valueInput, setValueInput] = useState(null);
 
   const handleForm = (ev) => ev.preventDefault();
-  console.log(valueInput);
 
   return (
     <ContainerNewsletter>

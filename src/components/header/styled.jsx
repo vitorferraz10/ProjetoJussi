@@ -56,5 +56,53 @@ export const ContainerHeader = styled.div`
       font-size: 16px;
       font-weight: 500;
     }
+
+    .btnOpenModal {
+      border: #f2f2f2 1px solid;
+      width: max-content;
+      min-width: max-content;
+      padding: 20px;
+      border-radius: 10px;
+      color: red;
+      transition: 0.9s;
+
+      &:hover {
+        border: solid 1px #ee0e7d;
+
+        cursor: pointer;
+      }
+
+      span {
+        margin-left: 10px;
+        text-transform: uppercase;
+      }
+    }
+
+    .modal {
+      position: absolute;
+      top: 20px;
+      border-radius: 25px;
+      right: 497px;
+      bottom: 40px;
+      z-index: 21;
+      max-width: 300px;
+      width: 100%;
+      background-color: #f2f2f2;
+
+      max-height: 500px;
+      overflow-y: scroll;
+      overflow-x: hidden;
+
+      button {
+        font-size: 30px;
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        position: relative;
+        left: 250px;
+        bottom: 42%;
+        cursor: pointer;
+      }
+    }
   }
 `;
